@@ -80,6 +80,22 @@ llm-in-production/
     └── prompt_injection_filter.py
 ```
 
+## What this is — and isn't
+
+To keep the scope honest:
+
+- **It is a set of field notes and a pre-launch checklist**, plus three tiny runnable
+  examples that show the *idea* behind a few of the tools.
+- **It is not a framework or a library.** There is nothing to `pip install`, no API to
+  depend on, and no versioned package. The examples are standard-library-only teaching
+  code, not production code — the real, tested implementations live in the linked tool
+  repos.
+- **It is opinionated, not authoritative.** The patterns are earned from my own traffic
+  and risk tolerance; yours differ. Treat it as a starting point to argue with, not a
+  spec to follow.
+- **It won't stay exhaustive.** The threat landscape and the tooling move; these notes
+  capture what has actually bitten me, not every possible failure mode.
+
 ## Who I am, and why to trust any of this
 
 I'm Parag — a software engineer who's spent years shipping backend and platform systems, lately the kind with a model in the hot path. The opinions here are mine and they're earned, but they're still opinions: your traffic, your model, and your risk tolerance are different from mine. Take what's useful, argue with the rest.
