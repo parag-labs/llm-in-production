@@ -10,6 +10,25 @@ It is not a framework. There's nothing to `pip install` here. It's notes plus a 
 
 ---
 
+## The request path
+
+Every guardrail in these notes sits on one path: a request goes in, tools run around it, and a response comes out. The tools below map onto these stages.
+
+```mermaid
+flowchart LR
+  classDef proc fill:#eff6ff,stroke:#3b82f6,color:#1e3a8a
+  classDef good fill:#f0fdf4,stroke:#22c55e,color:#14532d
+  classDef work fill:#faf5ff,stroke:#a855f7,color:#581c87
+  U["Request"]:::proc
+  IN["Guard input"]:::work
+  Q["Budget check"]:::work
+  M["Model"]:::proc
+  OUT["Redact output"]:::work
+  R["Response"]:::good
+  U --> IN --> Q --> M --> OUT --> R
+  M -.->|trace + cost| LOGS["Attribution"]:::good
+```
+
 ## The seven things that will bite you
 
 Almost every LLM-in-production headache I've hit falls into one of these buckets. Each note is short on purpose: the problem, why it's worse than it looks, the pattern that fixed it, and the tool I built so I never have to think about it again.
