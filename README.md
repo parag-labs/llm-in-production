@@ -110,6 +110,8 @@ The same "small, focused, actually tested" idea, for problems past the core seve
 - **[chaos-mesh-lite](https://github.com/parag-labs/chaos-mesh-lite)** — resilience testing as a CI/SLO gate: inject faults, assert the SLO still holds.
 - **[feature-vault](https://github.com/parag-labs/feature-vault)** — a mini feature store with point-in-time-correct joins that never leak the future.
 - **[agent-trace](https://github.com/parag-labs/agent-trace)** — a visual timeline and replay for agent runs: see where a run spent time, tokens, and money, then diff two runs.
+- **[agent-run-dashboard](https://github.com/parag-labs/agent-run-dashboard)** — a small full-stack dashboard (FastAPI + React) for recording agent runs and watching cost, tokens, and failures over time.
+- **[guardianforge](https://github.com/parag-labs/guardianforge)** — runtime governance for multi-agent systems, in Go and C#: watch agent fleets, enforce policy, score anomalies and trust, intervene, and keep a hash-chained audit trail.
 - **[deploy-kit](https://github.com/parag-labs/deploy-kit)** — one command to deploy an LLM app into any cloud or on-prem, secure by default.
 
 And when I need to blow off steam, [gpu-flock](https://github.com/parag-labs/gpu-flock) — a few thousand boids flocking entirely on the GPU. Not production anything; just fun.
